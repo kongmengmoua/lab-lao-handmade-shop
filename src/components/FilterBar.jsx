@@ -1,8 +1,8 @@
-import { useState } from "react";
+// import { useState } from "react";
 import { categories } from "../data.js";
 
-function FilterBar() {
-  const [value, setValue] = useState("all");
+function FilterBar({value, setValue}) {
+  // const [value, setValue] = useState("all");
   const options = ["all", ...categories];
   return (
     <div className="filter-row">
